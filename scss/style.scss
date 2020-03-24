@@ -1,0 +1,57 @@
+@import 'config'; // sass filenames with "_" prefix are "partials" that can be imported like this.
+@import 'utilities';
+
+* {
+  box-sizing: border-box; // border-box: padding and border are included in elements widht and height
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; // rem: multiplier of default font size (size of html elementsd default font, usually 16px)
+  line-height: 1.6; // adds space above and under the text, not the 2 baselines!
+  background-color: #ffffff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed; // always on top of page
+  top: 0px;
+  z-index: 1; // always on top of other elements on page
+  width: 100%;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9; // slightly translucent
+
+  ul {
+    // nested, like .navbar ul
+    display: flex;
+  }
+
+  a {
+    color: #ffffff;
+    padding: 0.45rem;
+    margin: 0 0.25rem; // top+bottom: 0rem, left / right: 0.25rem
+    &:hover {
+      // & = placeholder for parent element, so here: a:hover;
+      color: $primary-color;
+    }
+  }
+}
