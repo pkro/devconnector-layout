@@ -34,7 +34,7 @@
 }
 // Backgrounds
 .bg {
-  &-white {
+  &-primary {
     // = "bg-primary"
     @include set-background($primary-color);
   }
