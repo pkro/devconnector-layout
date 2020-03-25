@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to devconnector</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"> <i class="fas fa-code"></i></a> Dev connector
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <h1 class="large text-primary">Sign up</h1>
+      <div class="lead">
+        <i class="fas fa-user"></i>
+        Create your account</p>
+      </div>
+      <form action="dashboard.html" class="form">
+        <div class="form-group"><input type="text" placeholder="Name" /></div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" />
+          <small class="form-text">
+            This site uses Gravatar, so if you want a profile image, use a
+            Gravatar email
+          </small>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            minlength="6"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="password-confirm"
+            placeholder="Confirm password"
+            minlength="6"
+          />
+        </div>
+        <input type="submit" value="register" class="btn btn-primary">
+      </form>
+      <p class="my-1">Already registered? <a href="login.html">Sign in</a></p>
+    </section>
+  </body>
+</html>

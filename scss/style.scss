@@ -1,5 +1,6 @@
 @import 'config'; // sass filenames with "_" prefix are "partials" that can be imported like this.
 @import 'utilities';
+@import 'forms'; // could be in utilities, but just too many styles
 
 * {
   box-sizing: border-box; // border-box: padding and border are included in elements widht and height
@@ -73,4 +74,15 @@ img {
     justify-content: center;
     text-align: center;
   }
+}
+
+//Profiles page
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
