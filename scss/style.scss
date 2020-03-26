@@ -1,6 +1,7 @@
 @import 'config'; // sass filenames with "_" prefix are "partials" that can be imported like this.
 @import 'utilities';
 @import 'forms'; // could be in utilities, but just too many styles
+// also @import 'mobile' at the bottom
 
 * {
   box-sizing: border-box; // border-box: padding and border are included in elements widht and height
@@ -191,3 +192,5 @@ img {
     width: 150px;
   }
 }
+
+@import 'mobile';
